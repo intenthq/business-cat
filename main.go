@@ -28,13 +28,16 @@ type verb struct {
 
 var verbs = []verb{
 	// Business Verbs
+	verb{"Actioned", "Action"},
 	verb{"Activated", "Activate"},
 	verb{"Aggregated", "Aggregate"},
 	verb{"Benchmarked", "Benchmark"},
+	verb{"Compounded", "Compound"},
 	verb{"Considered", "Consider"},
 	verb{"Connected", "Connect"},
 	verb{"Consulted", "Consult"},
 	verb{"Deep dove", "Deep dive"},
+	verb{"Delivered", "Deliver"},
 	verb{"Deployed", "Deploy"},
 	verb{"Designed", "Design"},
 	verb{"Discontinued", "Discontinue"},
@@ -47,8 +50,10 @@ var verbs = []verb{
 	verb{"Integrated", "Integrate"},
 	verb{"Kick started", "Kick start"},
 	verb{"Optimised", "Optimise"},
+	verb{"Orchestrated", "Orchestrate"},
 	verb{"Planned", "Plan"},
 	verb{"Positioned", "Position"},
+	verb{"Prototyped", "Prototype"},
 	verb{"Prioritised", "Prioritise"},
 	verb{"Researched", "Research"},
 	verb{"Reviewed", "Review"},
@@ -60,6 +65,7 @@ var verbs = []verb{
 	verb{"Sued", "Sue"},
 	verb{"Synergized", "Synergize"},
 	verb{"Upgraded", "Upgrade"},
+	verb{"Visualised", "Visualise"},
 
 	// Cat Verbs
 	verb{"Attacked", "Attack"},
@@ -87,7 +93,8 @@ var defaultSubjects = []string{
 	"our",
 	"our",
 	"our",
-	"our", // A simple way to increase the frequency of occurence
+	"our",              // A simple way to increase the frequency of occurence
+	"our competitor's", // This will probably generate some unusual standups
 	"client’s",
 	"new client’s",
 	"prospective client’s",
@@ -123,6 +130,10 @@ var defaultObjects = []string{
 	"churn",
 	"intern",
 	"prospective client",
+	"engagement layer",
+	"functional silos",
+	"customer journeys",
+	"customer signal",
 }
 
 func isBankHoliday(holidays []golukay.BankHoliday, date time.Time) bool {
