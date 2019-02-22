@@ -109,7 +109,6 @@ var defaultObjects = []string{
 	"data",
 	"data lake",
 	"dashboard",
-	"signal control",
 	"AI",
 	"ingestion",
 	"user flow",
