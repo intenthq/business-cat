@@ -14,7 +14,7 @@ import (
 	"github.com/intenthq/golukay"
 )
 
-var version = "0.4"
+var version = "0.5"
 
 type slackResponse struct {
 	ResponseType string `json:"response_type"`
