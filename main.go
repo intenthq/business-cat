@@ -136,9 +136,9 @@ var defaultObjects = []string{
 }
 
 func isBankHoliday(holidays []golukay.BankHoliday, date time.Time) bool {
+	y2, m2, d2 := date.Date()
 	for _, holiday := range holidays {
 		y1, m1, d1 := holiday.Date.Date()
-		y2, m2, d2 := date.Date()
 
 		if y1 == y2 && m1 == m2 && d1 == d2 {
 			return true
